@@ -1,5 +1,15 @@
 source "https://rubygems.org"
 
+git_source(:github) do |https://github.com/ZakharKuzmyk/whh.git|
+  repo_name = "#{https://github.com/ZakharKuzmyk/whh.git}/#{https://github.com/ZakharKuzmyk/whh.git}" unless repo_name.include?("/")
+  "https://github.com/#{https://github.com/ZakharKuzmyk/whh.git}.git"
+end
+
+gem "github-pages",
+  github: 'UnderpantsGnome/pages-gem',
+  branch: "paginate-v2",
+  group: :jekyll_plugins
+
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
