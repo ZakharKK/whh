@@ -24,6 +24,11 @@ group :jekyll_plugins do
   gem "jekyll-paginate"
   gem "jekyll-paginate-v2"
   gem "jekyll-feed"
+  gem "github-pages",
+  github: 'UnderpantsGnome/pages-gem',
+  branch: "paginate-v2",
+  group: :jekyll_plugins
+
 end
 
 
